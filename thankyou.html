@@ -1,0 +1,123 @@
+<?php
+session_start();
+$name = $tym = $message = $email = $phone = $pid = "";
+$err = [];
+
+$servername = "localhost";
+$username = "root";
+$password = "";
+
+try {
+  $conn = new PDO("mysql:host=$servername;dbname=contact_form", $username, $password);
+  $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);  
+} catch(PDOException $e) {
+  echo "Connection failed: " . $e->getMessage();
+}
+
+if(isset($_POST['name'])){
+  $name = $_POST['name'];
+}
+
+echo "<pre>";
+   print_r($name);
+echo "</pre>";
+
+if(isset($_POST['name']) && !empty($_POST['name'])){
+  $name = $_POST['name'];
+}else{
+  $err['name'] = "Name is Required";
+}
+
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+ <!--devstart-->
+<!-- <script>
+  let projectname = "kumarprospera"
+  function autoRefreshPage() {
+    fetch('http://dashboards.anarockdigital.com/api/v0/lastupdated?project='+projectname, {
+      method: 'get',
+      credentials:"include"
+    }).then(function(response) {
+      return response.json();
+    }).then(function(data) {
+      if(data.status==200) {
+        if(window.lastupdated > 0 && data.time > window.lastupdated){
+          window.location.reload()
+        }
+        window.lastupdated = data.time
+      }
+    }).catch((e) => {
+    })
+  }
+  let b = document.createElement("base")
+  b.href="/"
+  if(window.location.href.indexOf("anarockdigital")==-1){
+    b.href="https://dpgvclkvnnsee.cloudfront.net/microsites/"+projectname+"/"
+  } else {
+    setInterval(autoRefreshPage,3000)
+  }
+  document.head.appendChild(b)
+</script> -->
+<!--devend-->
+<!--prod!!!
+  <base href="https://dpgvclkvnnsee.cloudfront.net/microsites/kumarprospera/" />
+!!!-->
+<head>
+  
+  
+  
+  <!-- Google Tag Manager -->
+
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-K7GKDQR');</script>
+<!-- End Google Tag Manager -->
+  
+<meta charset="utf-8">
+<title>Kumar Prospera</title>
+  <link rel="shortcut icon" href="images/developerlogo.png" type="image/x-icon">
+	<link rel="icon" href="images/developerlogo.png" type="image/x-icon">
+	
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+	
+	<style>
+			.text
+			{
+				font-family: 'Roboto', sans-serif;
+				color: #000;
+				padding-top:150px;
+			}
+	</style>
+  
+  <iframe src="https://adgebra.co.in/Tracker/Conversion?p1=5315&p2=[order_Id]&p3=[product_Id]&p4=[cartvalue]&p5=[flag~custom_values]"width="0" height="0" frameborder="0"></iframe>
+
+</head>
+
+<body style="background: #fff">
+	<img src="https://clicks.polyvalent.co.in/p?o=17461777&m=2498&t=i&auth_token=61979&adv_sub1={REPLACE}" width="0px" height="0px">
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K7GKDQR"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+  
+	<div align="center" class="text">
+<!--     	<img src="images/logo/developerlogo.png" alt="" style="width:250px"> -->
+		<h2>Thank you for your request.<br>Our sales team will get back to you soon.</h2></div>
+  <div align="center">
+      
+<!--     <a href="brochure.pdf" download><font  style="color:#000">Download Brochure</font></a> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;     -->
+    <a href="https://kumar-prospera.in/"><font  style="color:#000">HOME</font></a><br><br>
+     <a href="https://www.kumar-prospera.in/images/brochure.pdf" download><font  style="color:#000">Download Brochure</font></a>
+   
+  </div>
+	
+
+
+
+
+</body>
+</html>
