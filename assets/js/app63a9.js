@@ -377,7 +377,7 @@ function SwiperSlider() {
     resistanceRatio: 0.6,
     speed: 1000,
     spaceBetween: 40,
-    slidesPerView: 3,
+    slidesPerView: 2,
     autoplay: false,
     effect: "slide",
     mousewheel: false,

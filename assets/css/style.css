@@ -1986,7 +1986,8 @@ display: block;
 }
 .mapImg {
     text-align: center;
-    background-color: #fff;
+/*    background-color: #fff;*/
+	
     width: 100%;
     display: flex;
     position: relative;
